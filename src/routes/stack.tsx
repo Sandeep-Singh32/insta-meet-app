@@ -2,8 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
-import NonAuthStack from "./NonAuthStack";
-import AuthStack from "./authStack";
+import { AuthStack } from "./authStack";
+import { NonAuthStack } from "./nonAuthStack";
 
 export const StackScreens = () => {
 	const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
@@ -14,4 +14,3 @@ export const StackScreens = () => {
 		</NavigationContainer>
 	);
 };
-

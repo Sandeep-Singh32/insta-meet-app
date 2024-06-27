@@ -6,14 +6,12 @@ import { ForgotPassword } from "../screens/auth/forgotPassword/forgotPassword";
 
 const Stack = createStackNavigator();
 
-const NonAuthStack = () => {
+export const NonAuthStack = () => {
 	return (
-		<Stack.Navigator>
+		<Stack.Navigator screenOptions={{ headerShown: false }}>
 			<Stack.Screen name="Login" component={Login} />
 			<Stack.Screen name="Signup" component={Signup} />
 			<Stack.Screen name="ForgotPassword" component={ForgotPassword} />
 		</Stack.Navigator>
 	);
 };
-
-export default NonAuthStack;

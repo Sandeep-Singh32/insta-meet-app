@@ -12,8 +12,27 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		370D1F1B45C09A10CA9E95A5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E51A6F11044CA1ED5A717 /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-insta_meet_mobile-insta_meet_mobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-insta_meet_mobile-insta_meet_mobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		2FB31C1E98B94D729855C0D6 /* RobotoCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC1AF05CED3434CA8AFF3D9 /* RobotoCondensed-Black.ttf */; };
+		29195679F98749FDA033B01E /* RobotoCondensed-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9129E29208494AA6BFA52280 /* RobotoCondensed-BlackItalic.ttf */; };
+		070099F04D4C400CB63DF91A /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 021632EDBFA8441CBEEBA5F0 /* RobotoCondensed-Bold.ttf */; };
+		71B606EFCA7448409EFC0E7A /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C50C1314FB6447BAB0C6D349 /* RobotoCondensed-BoldItalic.ttf */; };
+		D93BCF8DC92A4B5590181FAA /* RobotoCondensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E35A108BB744DC9B07E2F1B /* RobotoCondensed-ExtraBold.ttf */; };
+		744565EDC69B440EB76C12F8 /* RobotoCondensed-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB0099B08444495BBDC30DA1 /* RobotoCondensed-ExtraBoldItalic.ttf */; };
+		06509DB23C784314B6EC9B29 /* RobotoCondensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59344B00465C43E6B884B774 /* RobotoCondensed-ExtraLight.ttf */; };
+		9BA23342E57B4ECFBA847D9E /* RobotoCondensed-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E166899A2514EBDBA58279C /* RobotoCondensed-ExtraLightItalic.ttf */; };
+		7F95C8967C63433FA94F6A48 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB65F7DEA647462BA868C36A /* RobotoCondensed-Italic.ttf */; };
+		0D29BB84CBBD4088AB742840 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 846387B29AA3407B8B65513C /* RobotoCondensed-Light.ttf */; };
+		E5CA6A7A7BC042269C507589 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B898596284DB46A9ACF57FB3 /* RobotoCondensed-LightItalic.ttf */; };
+		2FDB06957EAE4F9092A09A9B /* RobotoCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3F8E224154425AE6D24B4 /* RobotoCondensed-Medium.ttf */; };
+		AD383AD2BB7441E88CBCFD93 /* RobotoCondensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C027665DD3DC41CEB34D2604 /* RobotoCondensed-MediumItalic.ttf */; };
+		8FC7F6796D4D4DA79BFCDD40 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6A753722624BE4BDB57C1A /* RobotoCondensed-Regular.ttf */; };
+		7DD2449E37A4485883319798 /* RobotoCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1626521AAC46DB94FC1491 /* RobotoCondensed-SemiBold.ttf */; };
+		4D9598F14DF6448685D63203 /* RobotoCondensed-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179C2ADAFE114B56B2A9B7D4 /* RobotoCondensed-SemiBoldItalic.ttf */; };
+		9F523A0A026D4B29AA7D799D /* RobotoCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3EE38D0805F4AC6BB48DE35 /* RobotoCondensed-Thin.ttf */; };
+		8E6F56F4ACCC4FAFB5BC9816 /* RobotoCondensed-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 721C22E2E0EA48AFAE2D187F /* RobotoCondensed-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +55,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = insta_meet_mobile/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = insta_meet_mobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = insta_meet_mobile/main.m; sourceTree = "<group>"; };
-	    13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = insta_meet_mobile/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = insta_meet_mobile/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-insta_meet_mobile-insta_meet_mobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-insta_meet_mobile-insta_meet_mobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0E51A6F11044CA1ED5A717 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = insta_meet_mobile/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-insta_meet_mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta_meet_mobile.debug.xcconfig"; path = "Target Support Files/Pods-insta_meet_mobile/Pods-insta_meet_mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-insta_meet_mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta_meet_mobile.release.xcconfig"; path = "Target Support Files/Pods-insta_meet_mobile/Pods-insta_meet_mobile.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-insta_meet_mobile-insta_meet_mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta_meet_mobile-insta_meet_mobileTests.debug.xcconfig"; path = "Target Support Files/Pods-insta_meet_mobile-insta_meet_mobileTests/Pods-insta_meet_mobile-insta_meet_mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +65,24 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = insta_meet_mobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-insta_meet_mobile-insta_meet_mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta_meet_mobile-insta_meet_mobileTests.release.xcconfig"; path = "Target Support Files/Pods-insta_meet_mobile-insta_meet_mobileTests/Pods-insta_meet_mobile-insta_meet_mobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0DC1AF05CED3434CA8AFF3D9 /* RobotoCondensed-Black.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Black.ttf"; path = "../src/assets/fonts/RobotoCondensed-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9129E29208494AA6BFA52280 /* RobotoCondensed-BlackItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-BlackItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		021632EDBFA8441CBEEBA5F0 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Bold.ttf"; path = "../src/assets/fonts/RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C50C1314FB6447BAB0C6D349 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-BoldItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E35A108BB744DC9B07E2F1B /* RobotoCondensed-ExtraBold.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-ExtraBold.ttf"; path = "../src/assets/fonts/RobotoCondensed-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB0099B08444495BBDC30DA1 /* RobotoCondensed-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59344B00465C43E6B884B774 /* RobotoCondensed-ExtraLight.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-ExtraLight.ttf"; path = "../src/assets/fonts/RobotoCondensed-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E166899A2514EBDBA58279C /* RobotoCondensed-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-ExtraLightItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EB65F7DEA647462BA868C36A /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Italic.ttf"; path = "../src/assets/fonts/RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		846387B29AA3407B8B65513C /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Light.ttf"; path = "../src/assets/fonts/RobotoCondensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B898596284DB46A9ACF57FB3 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-LightItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7DA3F8E224154425AE6D24B4 /* RobotoCondensed-Medium.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Medium.ttf"; path = "../src/assets/fonts/RobotoCondensed-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C027665DD3DC41CEB34D2604 /* RobotoCondensed-MediumItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-MediumItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D6A753722624BE4BDB57C1A /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Regular.ttf"; path = "../src/assets/fonts/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AA1626521AAC46DB94FC1491 /* RobotoCondensed-SemiBold.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-SemiBold.ttf"; path = "../src/assets/fonts/RobotoCondensed-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		179C2ADAFE114B56B2A9B7D4 /* RobotoCondensed-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-SemiBoldItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B3EE38D0805F4AC6BB48DE35 /* RobotoCondensed-Thin.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Thin.ttf"; path = "../src/assets/fonts/RobotoCondensed-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		721C22E2E0EA48AFAE2D187F /* RobotoCondensed-ThinItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-ThinItalic.ttf"; path = "../src/assets/fonts/RobotoCondensed-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +132,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				2F0E51A6F11044CA1ED5A717 /* PrivacyInfo.xcprivacy */,
 			);
 			name = insta_meet_mobile;
 			sourceTree = "<group>";
@@ -124,6 +163,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				98CD972445A24822B21BE3C7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -150,6 +190,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		98CD972445A24822B21BE3C7 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				0DC1AF05CED3434CA8AFF3D9 /* RobotoCondensed-Black.ttf */,
+				9129E29208494AA6BFA52280 /* RobotoCondensed-BlackItalic.ttf */,
+				021632EDBFA8441CBEEBA5F0 /* RobotoCondensed-Bold.ttf */,
+				C50C1314FB6447BAB0C6D349 /* RobotoCondensed-BoldItalic.ttf */,
+				4E35A108BB744DC9B07E2F1B /* RobotoCondensed-ExtraBold.ttf */,
+				CB0099B08444495BBDC30DA1 /* RobotoCondensed-ExtraBoldItalic.ttf */,
+				59344B00465C43E6B884B774 /* RobotoCondensed-ExtraLight.ttf */,
+				3E166899A2514EBDBA58279C /* RobotoCondensed-ExtraLightItalic.ttf */,
+				EB65F7DEA647462BA868C36A /* RobotoCondensed-Italic.ttf */,
+				846387B29AA3407B8B65513C /* RobotoCondensed-Light.ttf */,
+				B898596284DB46A9ACF57FB3 /* RobotoCondensed-LightItalic.ttf */,
+				7DA3F8E224154425AE6D24B4 /* RobotoCondensed-Medium.ttf */,
+				C027665DD3DC41CEB34D2604 /* RobotoCondensed-MediumItalic.ttf */,
+				7D6A753722624BE4BDB57C1A /* RobotoCondensed-Regular.ttf */,
+				AA1626521AAC46DB94FC1491 /* RobotoCondensed-SemiBold.ttf */,
+				179C2ADAFE114B56B2A9B7D4 /* RobotoCondensed-SemiBoldItalic.ttf */,
+				B3EE38D0805F4AC6BB48DE35 /* RobotoCondensed-Thin.ttf */,
+				721C22E2E0EA48AFAE2D187F /* RobotoCondensed-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,7 +227,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
 				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -183,7 +248,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -245,6 +309,25 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				370D1F1B45C09A10CA9E95A5 /* PrivacyInfo.xcprivacy in Resources */,
+				2FB31C1E98B94D729855C0D6 /* RobotoCondensed-Black.ttf in Resources */,
+				29195679F98749FDA033B01E /* RobotoCondensed-BlackItalic.ttf in Resources */,
+				070099F04D4C400CB63DF91A /* RobotoCondensed-Bold.ttf in Resources */,
+				71B606EFCA7448409EFC0E7A /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				D93BCF8DC92A4B5590181FAA /* RobotoCondensed-ExtraBold.ttf in Resources */,
+				744565EDC69B440EB76C12F8 /* RobotoCondensed-ExtraBoldItalic.ttf in Resources */,
+				06509DB23C784314B6EC9B29 /* RobotoCondensed-ExtraLight.ttf in Resources */,
+				9BA23342E57B4ECFBA847D9E /* RobotoCondensed-ExtraLightItalic.ttf in Resources */,
+				7F95C8967C63433FA94F6A48 /* RobotoCondensed-Italic.ttf in Resources */,
+				0D29BB84CBBD4088AB742840 /* RobotoCondensed-Light.ttf in Resources */,
+				E5CA6A7A7BC042269C507589 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				2FDB06957EAE4F9092A09A9B /* RobotoCondensed-Medium.ttf in Resources */,
+				AD383AD2BB7441E88CBCFD93 /* RobotoCondensed-MediumItalic.ttf in Resources */,
+				8FC7F6796D4D4DA79BFCDD40 /* RobotoCondensed-Regular.ttf in Resources */,
+				7DD2449E37A4485883319798 /* RobotoCondensed-SemiBold.ttf in Resources */,
+				4D9598F14DF6448685D63203 /* RobotoCondensed-SemiBoldItalic.ttf in Resources */,
+				9F523A0A026D4B29AA7D799D /* RobotoCondensed-Thin.ttf in Resources */,
+				8E6F56F4ACCC4FAFB5BC9816 /* RobotoCondensed-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,23 +349,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
-		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-insta_meet_mobile/Pods-insta_meet_mobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-insta_meet_mobile/Pods-insta_meet_mobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-insta_meet_mobile/Pods-insta_meet_mobile-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -326,23 +392,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-insta_meet_mobile-insta_meet_mobileTests/Pods-insta_meet_mobile-insta_meet_mobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-insta_meet_mobile-insta_meet_mobileTests/Pods-insta_meet_mobile-insta_meet_mobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-insta_meet_mobile-insta_meet_mobileTests/Pods-insta_meet_mobile-insta_meet_mobileTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -517,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -544,6 +594,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -563,6 +614,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -582,7 +635,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -590,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -617,6 +677,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -629,6 +690,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -647,7 +710,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
