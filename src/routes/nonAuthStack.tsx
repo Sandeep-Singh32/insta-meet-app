@@ -4,14 +4,22 @@ import { Login } from "../screens/auth/login/login";
 import { Signup } from "../screens/auth/signup/signup";
 import { ForgotPassword } from "../screens/auth/forgotPassword/forgotPassword";
 
-const Stack = createStackNavigator();
+export type NonAuthStackScreens = {
+	login: undefined;
+	signup: undefined;
+	forgotPassword: undefined;
+};
+
+const Stack = createStackNavigator<NonAuthStackScreens>();
 
 export const NonAuthStack = () => {
 	return (
-		<Stack.Navigator screenOptions={{ headerShown: false }}>
-			<Stack.Screen name="Login" component={Login} />
-			<Stack.Screen name="Signup" component={Signup} />
-			<Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+		<Stack.Navigator
+			initialRouteName="login"
+			screenOptions={{ headerShown: false }}>
+			<Stack.Screen name="login" component={Login} />
+			<Stack.Screen name="signup" component={Signup} />
+			<Stack.Screen name="forgotPassword" component={ForgotPassword} />
 		</Stack.Navigator>
 	);
 };

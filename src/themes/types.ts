@@ -7,7 +7,7 @@ export type ColorTypeKeyName =
 
 export type ColorPaletteKeyName = any;
 
-export type ColorType = string | (symbol & { __TYPE__: "Color" });
+export type ColorType = string;
 
 export type ColorPalette = Record<
 	ColorTypeKeyName,

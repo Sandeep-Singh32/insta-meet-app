@@ -13,13 +13,17 @@ export const fontfamily = {
 	ITALIC_BOLD: "RobotoCondensed-BoldItalic",
 };
 
-export const lightThemeSxp: ColorPalette = {
+export const colorTheme: ColorPalette = {
 	primary: {
 		white: "#FFFFFF",
 		black: "#000000",
-
 		textGrey: "#868686",
 		red: "#D24837",
+		backgroundRed: "#FF3333",
+		backgroundGray: "#C2BCE4",
+		green: "#379777",
+    greyText: "#6E6E6E",
+
 	},
 	text: {
 		textLight: "#C2BCE4",
@@ -39,5 +43,4 @@ export const lightThemeSxp: ColorPalette = {
 	error: {
 		redLight1: "#FF6678",
 	},
-	fontfamily: fontfamily,
 };

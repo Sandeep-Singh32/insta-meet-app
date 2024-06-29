@@ -6,39 +6,55 @@ import {
 	TouchableOpacity,
 	StyleSheet,
 	Image,
+	ViewStyle,
+	ImageStyle,
+	TextStyle,
+	KeyboardAvoidingView,
+	Platform,
 } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
-import { useNavigation } from "@react-navigation/native";
+import { colorTheme, fontfamily } from "../../../themes/light";
+import { appIcon } from "../../../assets/images";
+import { NavigationProp } from "@react-navigation/native";
+import { NonAuthStackScreens } from "../../../routes/nonAuthStack";
 
-export const Login = () => {
-	const navigation = useNavigation();
+interface LoginInterface {
+	navigation: NavigationProp<NonAuthStackScreens>;
+}
+
+export const Login: React.FC<LoginInterface> = ({ navigation }) => {
+	const styles = styleSheet();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
+	const handleForgotPassword = () => {
+		navigation.navigate("forgotPassword");
+	};
+
+	const handelSignup = () => {
+		navigation.navigate("signup");
+	};
+
 	return (
-		<View style={styles.container}>
-			<Image
-				source={require("../../assets/instagram-logo.png")}
-				style={styles.logo}
-			/>
+		<KeyboardAvoidingView
+			style={styles.container}
+			behavior={Platform.OS === "android" ? "height" : "padding"}>
+			<Image source={appIcon} style={styles.logo} />
 
 			<View style={styles.inputContainer}>
-				<Icon name="user" size={20} color="#888" style={styles.icon} />
 				<TextInput
 					style={styles.input}
-					placeholder="Email or Phone"
-					placeholderTextColor="#888"
+					placeholder="Username, email address or mobile number"
+					placeholderTextColor={colorTheme.primary.black}
 					value={email}
 					onChangeText={setEmail}
 				/>
 			</View>
 
 			<View style={styles.inputContainer}>
-				<Icon name="lock" size={20} color="#888" style={styles.icon} />
 				<TextInput
 					style={styles.input}
 					placeholder="Password"
-					placeholderTextColor="#888"
+					placeholderTextColor={colorTheme.primary.black}
 					secureTextEntry
 					value={password}
 					onChangeText={setPassword}
@@ -46,105 +62,125 @@ export const Login = () => {
 			</View>
 
 			<TouchableOpacity style={styles.loginButton}>
-				<Text style={styles.loginButtonText}>Log In</Text>
+				<Text style={styles.loginButtonText}>Log in</Text>
 			</TouchableOpacity>
 
-			<TouchableOpacity
-				onPress={() => navigation.navigate("ForgotPassword")}>
-				<Text style={styles.forgotPassword}>Forgot Password?</Text>
+			<TouchableOpacity onPress={handleForgotPassword}>
+				<Text style={styles.forgotPassword}>Forgotten Password?</Text>
 			</TouchableOpacity>
 
-			<View style={styles.separatorContainer}>
-				<View style={styles.separatorLine} />
-				<Text style={styles.separatorText}>OR</Text>
-				<View style={styles.separatorLine} />
+			<View style={styles.bottomView}>
+				<TouchableOpacity
+					style={styles.signupButton}
+					onPress={handelSignup}>
+					<Text style={styles.signupButtonText}>
+						Create new account
+					</Text>
+				</TouchableOpacity>
+
+				<Text style={styles.appText}>Insta Meet</Text>
 			</View>
-
-			<TouchableOpacity
-				style={styles.signupButton}
-				onPress={() => navigation.navigate("Signup")}>
-				<Text style={styles.signupButtonText}>Sign Up</Text>
-			</TouchableOpacity>
-		</View>
+		</KeyboardAvoidingView>
 	);
 };
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#fff",
-		alignItems: "center",
-		justifyContent: "center",
-		padding: 16,
-	},
-	logo: {
-		width: 120,
-		height: 120,
-		marginBottom: 40,
-	},
-	inputContainer: {
-		flexDirection: "row",
-		alignItems: "center",
-		width: "100%",
-		backgroundColor: "#f1f1f1",
-		borderRadius: 5,
-		paddingHorizontal: 10,
-		marginVertical: 10,
-	},
-	icon: {
-		marginRight: 10,
-	},
-	input: {
-		flex: 1,
-		height: 40,
-		fontSize: 16,
-	},
-	loginButton: {
-		backgroundColor: "#3897f0",
-		width: "100%",
-		borderRadius: 5,
-		paddingVertical: 12,
-		alignItems: "center",
-		justifyContent: "center",
-		marginVertical: 10,
-	},
-	loginButtonText: {
-		color: "#fff",
-		fontSize: 16,
-		fontWeight: "bold",
-	},
-	forgotPassword: {
-		color: "#3897f0",
-		marginTop: 10,
-	},
-	separatorContainer: {
-		flexDirection: "row",
-		alignItems: "center",
-		width: "100%",
-		marginVertical: 20,
-	},
-	separatorLine: {
-		flex: 1,
-		height: 1,
-		backgroundColor: "#ddd",
-	},
-	separatorText: {
-		marginHorizontal: 10,
-		color: "#888",
-		fontSize: 14,
-	},
-	signupButton: {
-		width: "100%",
-		borderRadius: 5,
-		paddingVertical: 12,
-		alignItems: "center",
-		justifyContent: "center",
-		borderWidth: 1,
-		borderColor: "#ddd",
-	},
-	signupButtonText: {
-		color: "#3897f0",
-		fontSize: 16,
-		fontWeight: "bold",
-	},
-});
+interface StyleTypes {
+	container: ViewStyle;
+	logo: ImageStyle;
+	inputContainer: ViewStyle;
+	input: ViewStyle;
+	loginButton: ViewStyle;
+	loginButtonText: TextStyle;
+	forgotPassword: TextStyle;
+	signupButton: ViewStyle;
+	signupButtonText: TextStyle;
+	appText: TextStyle;
+	bottomView: ViewStyle;
+}
+
+const styleSheet = () =>
+	StyleSheet.create<StyleTypes>({
+		container: {
+			flex: 1,
+			backgroundColor: colorTheme.primary.white,
+			alignItems: "center",
+			justifyContent: "center",
+			padding: 16,
+		},
+		logo: {
+			width: 80,
+			height: 80,
+			marginBottom: 40,
+			borderRadius: 40,
+		},
+		inputContainer: {
+			width: "100%",
+			backgroundColor: "transparent",
+			borderRadius: 5,
+			paddingHorizontal: 10,
+			marginVertical: 10,
+			borderWidth: 1,
+		},
+		input: {
+			height: 50,
+			fontSize: 16,
+			fontFamily: fontfamily.REGULAR,
+			color: colorTheme.primary.black,
+			borderRadius: 20,
+		},
+		loginButton: {
+			backgroundColor: colorTheme.primary.green,
+			width: "100%",
+			borderRadius: 20,
+			paddingVertical: 12,
+			alignItems: "center",
+			justifyContent: "center",
+			marginVertical: 10,
+		},
+		loginButtonText: {
+			color: colorTheme.primary.white,
+			fontSize: 16,
+			fontWeight: "bold",
+			fontFamily: fontfamily.BOLD,
+		},
+		forgotPassword: {
+			color: colorTheme.primary.black,
+			marginTop: 5,
+			fontFamily: fontfamily.MEDIUM,
+			letterSpacing: 0.7,
+			fontSize: 14,
+		},
+		signupButton: {
+			width: "100%",
+			paddingVertical: 12,
+			alignItems: "center",
+			justifyContent: "center",
+			borderWidth: 1,
+			borderColor: colorTheme.primary.green,
+			marginVertical: 10,
+			borderRadius: 20,
+		},
+		signupButtonText: {
+			color: colorTheme.primary.green,
+			fontSize: 16,
+			fontWeight: "bold",
+			fontFamily: fontfamily.BOLD,
+		},
+		appText: {
+			color: colorTheme.primary.black,
+			fontSize: 16,
+			marginTop: 20,
+			fontFamily: fontfamily.MEDIUM,
+		},
+		bottomView: {
+			// ...StyleSheet.absoluteFillObject,
+			// bottom: 50,
+			marginTop: 100,
+			top: undefined,
+			width: "100%",
+			// padding: 16,
+			alignItems: "center",
+			alignSelf: "center",
+			justifyContent: "center",
+		},
+	});
