@@ -26,6 +26,7 @@ export const Signup: React.FC<SignupInterface> = ({ navigation }) => {
 	const styles = styleSheet();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [name, setName] = useState("");
 
 	const handleLogin = () => {
 		navigation.navigate("login");
@@ -41,8 +42,18 @@ export const Signup: React.FC<SignupInterface> = ({ navigation }) => {
 				<View style={styles.inputContainer}>
 					<TextInput
 						style={styles.input}
+						placeholder="name"
+						placeholderTextColor={colorTheme.primary.black}
+						value={name}
+						onChangeText={setName}
+					/>
+				</View>
+
+				<View style={styles.inputContainer}>
+					<TextInput
+						style={styles.input}
 						keyboardType="numeric"
-						placeholder="email or mobile number"
+						placeholder="username, email address or mobile number"
 						placeholderTextColor={colorTheme.primary.black}
 						value={email}
 						onChangeText={setEmail}
@@ -52,7 +63,7 @@ export const Signup: React.FC<SignupInterface> = ({ navigation }) => {
 				<View style={styles.inputContainer}>
 					<TextInput
 						style={styles.input}
-						placeholder="Password"
+						placeholder="password"
 						placeholderTextColor={colorTheme.primary.black}
 						secureTextEntry
 						value={password}

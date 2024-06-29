@@ -28,10 +28,7 @@ export const ForgotPassword: React.FC<ForgotPasswordInterface> = ({
 	const styles = styleSheet();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-
-	const handleForgotPassword = () => {
-		navigation.navigate("forgotPassword");
-	};
+	const [cPassword, setCPassword] = useState("");
 
 	const handleLogin = () => {
 		navigation.navigate("login");
@@ -47,7 +44,7 @@ export const ForgotPassword: React.FC<ForgotPasswordInterface> = ({
 				<View style={styles.inputContainer}>
 					<TextInput
 						style={styles.input}
-						placeholder="Username, email address or mobile number"
+						placeholder="username, email address or mobile number"
 						placeholderTextColor={colorTheme.primary.black}
 						value={email}
 						onChangeText={setEmail}
@@ -57,7 +54,7 @@ export const ForgotPassword: React.FC<ForgotPasswordInterface> = ({
 				<View style={styles.inputContainer}>
 					<TextInput
 						style={styles.input}
-						placeholder="Password"
+						placeholder="new password"
 						placeholderTextColor={colorTheme.primary.black}
 						secureTextEntry
 						value={password}
@@ -65,17 +62,22 @@ export const ForgotPassword: React.FC<ForgotPasswordInterface> = ({
 					/>
 				</View>
 
+				<View style={styles.inputContainer}>
+					<TextInput
+						style={styles.input}
+						placeholder="confirm new password"
+						placeholderTextColor={colorTheme.primary.black}
+						secureTextEntry
+						value={cPassword}
+						onChangeText={setCPassword}
+					/>
+				</View>
+
 				<TouchableOpacity style={styles.loginButton}>
-					<Text style={styles.loginButtonText}>Log in</Text>
+					<Text style={styles.loginButtonText}>Reset Password</Text>
 				</TouchableOpacity>
 
 				<View style={styles.bottomView}>
-					<TouchableOpacity onPress={handleLogin}>
-						<Text style={styles.signupButtonText}>
-							Create new account
-						</Text>
-					</TouchableOpacity>
-
 					<Text style={styles.appText}>Insta Meet</Text>
 				</View>
 			</KeyboardAvoidingView>

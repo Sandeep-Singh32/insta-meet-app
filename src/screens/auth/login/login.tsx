@@ -43,7 +43,7 @@ export const Login: React.FC<LoginInterface> = ({ navigation }) => {
 			<View style={styles.inputContainer}>
 				<TextInput
 					style={styles.input}
-					placeholder="Username, email address or mobile number"
+					placeholder="username, email address or mobile number"
 					placeholderTextColor={colorTheme.primary.black}
 					value={email}
 					onChangeText={setEmail}
@@ -53,7 +53,7 @@ export const Login: React.FC<LoginInterface> = ({ navigation }) => {
 			<View style={styles.inputContainer}>
 				<TextInput
 					style={styles.input}
-					placeholder="Password"
+					placeholder="password"
 					placeholderTextColor={colorTheme.primary.black}
 					secureTextEntry
 					value={password}
